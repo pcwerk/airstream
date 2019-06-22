@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+
+  compile: 
+    container_name: airstream
+    build: .
+    volumes: 
+      - "./:/home/chains/"
+      - "/var/run/docker.sock:/var/run/docker.sock"

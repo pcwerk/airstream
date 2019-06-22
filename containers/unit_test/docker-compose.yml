@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  compile: 
+    container_name: unit_test
+    build: .
