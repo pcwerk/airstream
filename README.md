@@ -152,6 +152,22 @@ airstream  | unit_test exited with code 0
 airstream  | airstream exited with code 0
 ```
 
+## Callbacks
+
+In the example provided above, the results are logged to the console.  In practice, it is useful to have call back functions. For example, given the this code snippet:
+
+```bash
+if [ -f "app" ] ; then
+   echo "lint success"
+   exit 0
+else
+   echo "lint failed"
+   exit 1
+fi
+```
+
+We could easily add a call back either with a `curl` or some other API calls to record success or failure of that stage.  If we were to integrate this into a real CI framework, e.g. Jenkins or Bamboo, we would rely on the CI system to detect and handle success (or failure) of a that stage.
+
 ## References
 
 - [Docker in Docker?](https://itnext.io/docker-in-docker-521958d34efd)
