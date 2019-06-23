@@ -1,6 +1,6 @@
 # Purpose
 
-The `Airstream` project provides a simple framework/example demonstrating how kick of a continuous integration (CI) and continuous deployment (CD) flow independent of underlying CI/CD technology.
+The `Airstream` project provides a simple framework/example demonstrating how initiate a continuous integration (CI) and continuous deployment (CD) flow independent of underlying CI/CD technology.
 
 ## Strategy
 - Developers are expected to develop a container the the different stages of the CI pipeline
