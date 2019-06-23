@@ -5,6 +5,9 @@ RUN apt-get update && \
     apt-get install -y docker-compose
 
 RUN mkdir -p /home/chains
+
 WORKDIR /home/chains
+
 COPY . .
-CMD [ "./run.sh" ]
+
+CMD [ "./airstream.sh" ]
